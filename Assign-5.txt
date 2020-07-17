@@ -1,0 +1,54 @@
+#1
+
+select *from orders 
+where amt>1000;
+
+#2
+
+select sname,city
+from SALESPEOPLE
+WHERE city="London" and comm>0.10;
+
+
+#3
+
+select*from customers
+where rating>100 OR city='rome';
+
+#4
+
+Select * from Orders 
+where (amt < 1000 OR 
+NOT (odate ='1990-10-03'
+AND cnum > 2003));
+o/p:	Onum	Amt	Odate	        Cnum	Snum
+	3001	18.69	1990-10-13	2008	1007
+	3003	767.19	1990-10-03	2001	1001
+	3005	5160.45	1990-10-03	2003	1002
+	3009	1713.23	1990-10-04	2002	1003
+	3007	75.75	1990-10-04	2004	1002
+	3008	4723.00	1990-10-05	2006	1001
+	3010	1309.95	1990-10-06	2004	1002
+	3011	9891.88	1990-10-06	2006	1001
+#5
+
+Select * from Orders 
+where NOT ((odate = '1990-10-03'OR snum
+>1006) AND amt >= 1500);
+
+
+o/p
+
+	Onum	Amt	Odate	        Cnum	Snum
+	3003	767.19	1990-10-03	2001	1001
+	3008	4723.00	1990-10-05	2006	1001
+	3011	9891.88	1990-10-06	2006	1001
+	3007	75.75	1990-10-04	2004	1002
+	3010	1309.95	1990-10-06	2004	1002
+	3009	1713.23	1990-10-04	2002	1003
+	3001	18.69	1990-10-13	2008	1007
+	3006	1098.16	1990-10-03	2008	1007
+#6
+
+select *from salespeople 
+where comm>0.12 OR Comm<0.14;
