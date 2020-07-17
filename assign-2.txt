@@ -1,0 +1,11 @@
+1)Which field of the Customers table is the primary key?
+ans:CNUM is the field of the Customer table who is having primary key.
+
+2)What is the 4th column of the Customer table?
+ans:Rating is the 4th column of the customer table.
+
+3)What is another word for row? For column?
+ans: Tuple ,Entity,opportunity is the another word for row and for column it is attributes and method.
+
+4)Why isn't it possible to see the first five rows of a table?
+ans:IF we used query select all from a given table ,then it shows all rows in a table.BUt if you want to get first five rows in a table then we use limit keyword and limit it upto 5 rows.
