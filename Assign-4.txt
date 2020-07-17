@@ -1,0 +1,19 @@
+1)
+select Onum,amt,odate from orders;
+
+2)select* from customers 
+
+where snum=1001;
+
+3)select city,sname,snum,comm  
+
+from salespeople;
+
+4)select rating,cname 
+from customers 
+where city="San Jose";
+
+5)select distinct snum
+from orders 
+
+order by onum ;

@@ -1,0 +1,15 @@
+1)Does ANSI recognize the data type DATE?
+->Yes, ANSI recognizes the data type DATE.
+
+2) Which subdivision of SQL is used to insert values in tables
+->there are 4 subdivison of SQL
+1)DDL(data definition language)
+->In this, create ,drop, alter command in DDL.
+2)DML(data manipulation language)
+->DML contains INSERT ,UPDATE,DELETE command.
+3)DCL:It is called data control language.It contains Grant and Revoke command.
+4)DQL(Data Query Language):It contains only select statement in it.
+5)commands which not conforms to ANSI are DDL Command Rename and Truncate
+and DML commands are upsert and merge
+6)5th sub division which is extra in oracle and Mysql are TCL(transactiom control language) or DTL(Data transaction language) which contains commit
+,rollback and savepoint command.
