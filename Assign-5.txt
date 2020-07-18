@@ -50,5 +50,4 @@ o/p
 	3006	1098.16	1990-10-03	2008	1007
 #6
 
-select *from salespeople 
-where comm>0.12 OR Comm<0.14;
+select *from salespeople ;
