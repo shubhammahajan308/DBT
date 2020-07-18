@@ -1,0 +1,28 @@
+#1
+select * from orders
+where Odate in('1990-10-03','1990-10-04');
+
+#2
+select*from orders
+where odate between '1990-10-03'and '1990-10-04';
+
+#3
+select*from customers
+where Snum in
+	(select snum from SALESPEOPLE
+		where Sname='PEEL'OR Sname='Motika');
+        
+select*from customers
+where Snum in(select snum from SALESPEOPLE where sname in('PEEL','Motika'));
+ 
+#4
+select*from customers
+where cname like 'A%' or cname like'b%' or cname like 'c%' or cname like 'd%' or cname like 'f%' or cname like 'g%';   
+
+#5
+select*from customers
+where cname like 'C%';
+
+#6
+select * from orders
+where  amt not Between NULL and 0;
