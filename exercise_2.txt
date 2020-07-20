@@ -1,0 +1,56 @@
+#1
+
+
+select*from s
+
+order by city desc;
+
+
+select*from  p;
+
+#2
+
+select * from p
+
+order by city ,pname; 
+
+
+
+insert p values('p5','j','grey',35,'london');
+
+
+#3
+
+select*from s
+
+where status between 10 and 20;
+
+
+#4
+
+select*from p
+
+where weight not between 10 and 15;
+
+
+#5
+
+select pname from p
+
+where pname like's%';
+
+
+#6
+
+select * from s
+
+where city like 'l%';
+
+insert j values('j3','console_p','new york');
+
+
+#7
+
+select*from j 
+
+where jname like '__n%';
